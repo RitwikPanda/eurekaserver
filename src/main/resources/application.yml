@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+#Below code tells the eureka server not to register by itself
+eureka:
+  client:
+    register-with-eureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    hostname: localhost
